@@ -1,7 +1,78 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    display: flex   ;
-    justify-content: center;
-    background-color: rgb(252, 233, 239);
+    background-color: rgb(222, 226, 255);
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+h1 {
+    font-size: 24px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+h2 {
+    font-size: 20px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.nt_content {
+    width: 89.7% ;
+}
+.nt_button {
+    width: 9.6%;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-weight: bold;
+    color: rgb(30, 30, 30);
+}
+
+td {
+    text-align: left;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: rgb(85, 85, 85);
+}
+/*Table Header*/
+table.tb_content .th_tasks{
+    width: 70vh;
+}
+
+table.tb_content .th_date {
+    width: 10vh;
+}
+
+table.tb_content .th_status {
+    width: 10vh;
+}
+
+table.tb_content .th_menu {
+    width: 10vh;
+}
+
+/*Table Content*/
+table.tb_content .task_content {
+    width: 80vh;
+}
+
+table.tb_content .date_created {
+    width: 10vh;
+}
+
+table.tb_content .status_content {
+    width: 10vh;
+}
+
+table.tb_content .menu_content {
+    width: 10vh;
 }

@@ -11,6 +11,7 @@ class Todo(db.Model):
     content = db.Column(db.String(200), nullable=False)
     completed = db.Column(db.Integer, default=0)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
+    status = db.Column(db.String, default ='Active')
 
     def __repr__(self):
         return '<Task %r>' % self.id
@@ -19,7 +20,7 @@ class Todo(db.Model):
 def index():
     if request.method == 'POST':
         task_content = request.form['content']
-        new_task = Todo(content = task_content)
+        new_task = Todo(content = task_content, status='Active')
 
         try:
             db.session.add(new_task)
