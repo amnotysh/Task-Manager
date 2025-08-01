@@ -18,42 +18,64 @@ h2 {
     padding-bottom: 1vh;
 }
 
-.nt_content {
-    width: 89.7% ;
+.nt_content {   
+    width: 89.5% ;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    border: none;
+    box-shadow: 1px 2px 6px rgba(50, 50, 50, 0.2);
 }
+
 .nt_button {
-    width: 9.6%;
+    width: 9.4%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 table {
     width: 100%;
+    border-collapse: collapse;
 }
 
 th {
     text-align: left;
     padding-top: 1vh;
+    padding-left: 1vh;
     padding-bottom: 1vh;
     font-weight: bold;
     color: rgb(30, 30, 30);
+    font-size: 18px;
 }
 
 td {
     text-align: left;
     padding-top: 1vh;
+    padding-left: 1vh;
     padding-bottom: 1vh;
-    color: rgb(85, 85, 85);
+    color: rgb(50, 50, 50);
+    font-size: 16px;
+}
+
+th, td {
+    border: none;
+}
+
+tr.td_content {
+    background-color: white;
+    box-shadow: 1px 2px 6px rgba(50, 50, 50, 0.2);
 }
 /*Table Header*/
 table.tb_content .th_tasks{
-    width: 70vh;
+    width: 60vh;
 }
 
 table.tb_content .th_date {
-    width: 10vh;
+    width: 20vh;    
 }
 
 table.tb_content .th_status {
-    width: 10vh;
+    width: 20vh;
 }
 
 table.tb_content .th_menu {
@@ -62,15 +84,15 @@ table.tb_content .th_menu {
 
 /*Table Content*/
 table.tb_content .task_content {
-    width: 80vh;
+    width: 60vh;
 }
 
 table.tb_content .date_created {
-    width: 10vh;
+    width: 20vh;
 }
 
 table.tb_content .status_content {
-    width: 10vh;
+    width: 20vh;
 }
 
 table.tb_content .menu_content {

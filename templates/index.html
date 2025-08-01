@@ -8,6 +8,7 @@
     <div class = "content">
         <h1>Yesha's To Do App</h1>
         <h2>Task Board:  30:48</h2>
+
         
         <table class = "tb_content">
             <tr>
@@ -17,9 +18,9 @@
                 <th class = "th_menu">Menu</th>
             </tr>
             {% for tasks in tasks %}
-            <tr>
+            <tr class = "td_content">
                 <td class = "task_content">{{ tasks.content }}</td>
-                <td class = "date_created">{{ tasks.date_created.date() }}</td>
+                <td class = "date_created">{{ tasks.date_created.strftime("%B %d, %Y ") }}</td>
                 <td class = "status_content">{{ tasks.status }}</td>
                 <td class = "menu_content">
                     <a href="">Update</a>
@@ -28,9 +29,9 @@
             </tr>
             {% endfor %}
         </table>
-        <br>
+        <br><br>
         <form action="/" method="POST">
-            <input class = "nt_content" type="text" name="content" id="content" required>
+            <input class = "nt_content" type="text" name="content" id="content" placeholder="Add New Task" required>
             <input class = "nt_button" type="submit" value="Add New Task">
         </form>
     </div>
