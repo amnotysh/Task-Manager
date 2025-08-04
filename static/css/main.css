@@ -53,6 +53,12 @@ header {
     padding-bottom: 5px;
 }
 
+.status_content select {
+    border: none;
+    font-size: 0.9rem;
+}
+
+
 table {
     width: 100%;
     border-collapse: collapse;

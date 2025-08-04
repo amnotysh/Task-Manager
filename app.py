@@ -20,7 +20,7 @@ class Todo(db.Model):
 def index():
     if request.method == 'POST':
         task_content = request.form['content']
-        new_task = Todo(content = task_content, status='Active')
+        new_task = Todo(content = task_content)
 
         try:
             db.session.add(new_task)
@@ -32,6 +32,18 @@ def index():
     else:
         tasks = Todo.query.order_by(Todo.date_created).all()
         return render_template('index.html', tasks=tasks, imagename='logo.png')
+
+@app.route('/update_status/<int:task_id>', methods=['POST'])
+def update_status(task_id):
+    task = Todo.query.get_or_404(task_id)
+    new_status = request.form['status']
+    task.status = new_status
+
+    try:
+        db.session.commit()
+        return redirect('/')
+    except:
+        return "There was a problem updating the status"
 
 if __name__ == "__main__":
     app.run(debug=True)
