@@ -9,34 +9,48 @@ body {
     margin: 0;
     font-family: sans-serif;
     background-color: rgb(222, 226, 255);
-    margin-left: 5vh;
-    margin-right: 5vh;
+    -ms-overflow-style: none;
 }
 
-h1 {
-    font-size: 24px;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+body::-webkit-scrollbar {
+    display: none;
 }
 
-h2 {
+/*h2 {
     font-size: 20px;
     padding-top: 1vh;
     padding-bottom: 1vh;
-}
+}*/
 
 header {
     user-select: none;
     display: flex;
-    flex-direction: column;
-    padding: 20px 0;
+    padding: 2.5vh 5.5vh;   
     align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo_container {
+    position: absolute;
+    left: 5vh;
 }
 
 .logo {
-    width: 40px;
-    height: auto;
+    height: 40px;
 }
+
+.title {
+    margin: 0;
+    font-size: 32px ;
+}
+
+.content{
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-top: 2vh;
+}
+
 
 .nt_content {   
     width: 89.5% ;
