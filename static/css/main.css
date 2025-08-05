@@ -36,7 +36,8 @@ header {
 
 .title {
     margin: 0;
-    font-size: 26px ;
+    font-size: 26px;
+    text-shadow: 1px 1px 8px rgba(60, 60, 60, 0.2);
 }
 
 .content{
