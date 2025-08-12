@@ -138,6 +138,7 @@ table.tb_content .menu_content {
     position: relative;
     font-size: 0.9rem;
     cursor: pointer;
+    left: 1.5vh;
 }
 
 .menu-select select {
