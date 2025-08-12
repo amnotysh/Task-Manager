@@ -34,9 +34,14 @@
                         </select>
                     </form>
                 </td>
-                <td class = "menu_content">
-                    <a href="">Update</a>
-                    <a href="">Delete</a>
+                <td class="menu_content">
+                    <label class="menu-select">
+                        &#9776;
+                        <select onchange="if(this.value) window.location=this.value">
+                            <option href = "#">Update</option>
+                            <option href = "#">Delete</option>
+                        </select>
+                    </label>
                 </td>
             </tr>
             {% endfor %}

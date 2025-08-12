@@ -133,3 +133,19 @@ table.tb_content .status_content {
 table.tb_content .menu_content {
     width: 10vh;
 }
+
+.menu-select {
+    position: relative;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.menu-select select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    border: none;
+    font-size: 0.9rem;
+}

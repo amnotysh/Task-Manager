@@ -31,8 +31,8 @@ def index():
         
     else:
         tasks = Todo.query.order_by(Todo.date_created).all()
-        return render_template('index.html', tasks=tasks, imagename='logo.png')
-
+        return render_template('index.html', tasks=tasks, imagename='logo.png') 
+    
 @app.route('/update_status/<int:task_id>', methods=['POST'])
 def update_status(task_id):
     task = Todo.query.get_or_404(task_id)
